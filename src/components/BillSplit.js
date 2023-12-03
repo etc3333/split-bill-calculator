@@ -44,7 +44,8 @@ const BillSplit = () => {
       eachPersonPayedArray.push({
         purchaseAmount: inputNumber,
         salesTaxIndiv: inputNumber*salesTaxDecimal,
-        sharedTip: parseFloat(inputs.tip)/parseFloat(inputs.splitNumber)
+        sharedTip: parseFloat(inputs.tip)/parseFloat(inputs.splitNumber),
+        totalPayment: inputNumber + inputNumber*salesTaxDecimal + parseFloat(inputs.tip)/parseFloat(inputs.splitNumber)
       });
     }       
     setTotalTip(inputs.tip);
@@ -80,7 +81,7 @@ const BillSplit = () => {
             <input type='text' name='tip' value={inputs.tip || ''} placeholder='$' onChange={handleChange} />
           </label>
           <label>
-            Sales Tax
+            Sales Tax (percentage)
             <input type='text' name='salesTax' value={inputs.salesTax || ''} placeholder='%' onChange={handleChange} />
           </label>
           {splitBoxes}
@@ -112,6 +113,9 @@ const BillSplit = () => {
                   </div>
                   <div>
                     Shared Tip: ${object.sharedTip}
+                  </div>
+                  <div>
+                    This person total part of entire bill: ${object.totalPayment}
                   </div>
                 </div>
               )
