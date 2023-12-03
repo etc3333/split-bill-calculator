@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/split-bill-calculator/static/css/main.f94709d3.css",
-    "main.js": "/split-bill-calculator/static/js/main.ec71f5d1.js",
+    "main.js": "/split-bill-calculator/static/js/main.a30321d1.js",
     "static/js/787.b2ac5784.chunk.js": "/split-bill-calculator/static/js/787.b2ac5784.chunk.js",
     "index.html": "/split-bill-calculator/index.html",
     "main.f94709d3.css.map": "/split-bill-calculator/static/css/main.f94709d3.css.map",
-    "main.ec71f5d1.js.map": "/split-bill-calculator/static/js/main.ec71f5d1.js.map",
+    "main.a30321d1.js.map": "/split-bill-calculator/static/js/main.a30321d1.js.map",
     "787.b2ac5784.chunk.js.map": "/split-bill-calculator/static/js/787.b2ac5784.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f94709d3.css",
-    "static/js/main.ec71f5d1.js"
+    "static/js/main.a30321d1.js"
   ]
 }
